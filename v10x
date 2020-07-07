@@ -1,0 +1,17 @@
+password = "v10"
+word = ""
+count = 0
+limit = 3
+out = False
+
+
+while word != password and not (out):
+    if count < limit:
+        word = input ("Enter password: ")
+    else:
+        out = True
+    count += 1
+if out:
+    print("Out of try")
+else:
+    print ("Correct !")
